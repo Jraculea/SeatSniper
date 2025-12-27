@@ -2,7 +2,7 @@
 
 A course enrollment automation tool for CUNY students. Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Features](#features)
 - [Prerequisites](#prerequisites)
@@ -10,8 +10,12 @@ A course enrollment automation tool for CUNY students. Provides better chances a
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Planned Features](#planned-features)
+- [Important Notes](#important-notes)
+- [License](#license)
+- [Contributing](#contributing)
+- [Support](#support)
 
-## ✨ Features
+## Features
 
 - **Automated Course Enrollment**: Periodically checks for available seats and automatically enrolls when spots open up
 - **Multi-Course Support**: Monitor and enroll in multiple courses simultaneously
@@ -19,14 +23,13 @@ A course enrollment automation tool for CUNY students. Provides better chances a
 - **Time-Limited Execution**: Set a maximum duration for the automation to run, or let it run indefinitely
 - **MFA Support**: Integrated support for CUNY's multi-factor authentication system
 
-## 🔧 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have a list of desired course section codes.
 
 - The tool uses the **number** portion of a **section code** ![Browser Version Check](images/chromium_version.png)
 - To find desired course section codes, navigate Schedule Builder and note them for later.
-- - ([Check here](https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/registrar/resources/schedulebuilder/SB-Advisor-Guide_01.22.2021.pdf#page=21)) for more information on how to obtain a course section code.
-- **Java 21** or higher ([Download Java](https://www.oracle.com/java/technologies/downloads/))
+  - ([Check here](https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/registrar/resources/schedulebuilder/SB-Advisor-Guide_01.22.2021.pdf#page=21)) for more information on how to obtain a course section code.
 
 Before you begin, ensure you have the following installed:
 
@@ -36,7 +39,7 @@ Before you begin, ensure you have the following installed:
 - **Chrome Browser** (or Chromium-based browser like Brave)
 - **ChromeDriver** (matching your browser version)
 
-## 📥 Installation
+## Installation
 
 ### Step 1: Clone the Repository
 
@@ -86,7 +89,7 @@ mvn clean install
 
 This will download all required dependencies and compile the project.
 
-## ⚙️ Configuration
+## Configuration
 
 ### Step 4: Configure the Properties File
 
@@ -149,14 +152,14 @@ This will download all required dependencies and compile the project.
    maxDuration=0
    ```
 
-   ![Properties File Filled](images/properties_example.png)
+   ![Properties File Filled](images/properties_file_example.png)
 
    > **Helpful Links:**
    > - [How to Find Your Browser Path](https://support.google.com/chrome/answer/95346)
    > - [CUNY MFA Setup Guide](https://employees.brooklyn.edu/base/cuny-mfa-setup/)
    > - [How to find section codes](https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/registrar/resources/schedulebuilder/SB-Advisor-Guide_01.22.2021.pdf#page=21)
 
-## 🚀 Usage
+## Usage
 
 ### Step 5: Run the Application
 
@@ -187,7 +190,7 @@ java -cp target/classes com.seatsniper.Main
    - Runs for the specified `maxDuration` (or indefinitely if set to 0), or once all courses have been enrolled in
 7. **Feedback**: 
    - Outputs the status of each course every attempt (i.e., enrolled, wait-listed, failed (full), unavailable (unknown course code))
-   - ![Attempt Output Example](images/attempt_output_example.png)
+   ![Attempt Output Example](images/attempt_output_example.png)
 
 ### Stopping the Application
 
@@ -195,32 +198,33 @@ To stop the application:
 - Enter `Ctrl + C` in the terminal/command prompt
 - The application will gracefully shut down and close the browser
 
-## 🔮 Planned Features
+## Planned Features
 
 - Enrollment in courses from multiple CUNY colleges
 - Moving from terminal output to webhooks for the status of courses
 - Fetching recommended courses based on DegreeWorks and professor reviews (i.e., faculty evaluations and RateMyProfessor)
 - Scaling to SAAS(?)
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **Rate Limiting**: Keep the `interval` at a reasonable value (30+ seconds recommended) to avoid being rate-limited or flagged
 - **Security**: Never commit your `user_config.properties` file with real credentials to version control
 - **Browser Updates**: If you update your browser, you may need to download a new ChromeDriver version
 - **Account Safety**: Use this tool responsibly and in accordance with CUNY's terms of service
 
-## 📝 License
+## License
 
 See the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+- Support the project by giving it a star 🌟 Thanks!
+- Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📧 Support
+## Support
 
 If you encounter any issues or have questions, please open an issue on the [GitHub repository](https://github.com/Jraculea/SeatSniper/issues).
 
 ---
 
-**Disclaimer**: This tool is for educational purposes. Use responsibly and in accordance with CUNY's terms of service. The developer(s) is not responsible for any misuse of this software.
+⚠️ **Disclaimer**: This tool is for educational purposes. Use responsibly and in accordance with CUNY's terms of service. The developer(s) is not responsible for any misuse of this software.
