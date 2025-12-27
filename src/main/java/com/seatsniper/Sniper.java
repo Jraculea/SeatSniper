@@ -23,12 +23,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Sniper {
-    // --Move these directions to the ReadMe or wtv
-    //Set to the ChromeDriver path on your system
-    //Should be the closest download version to your browser: (xxx.xx.xxxx.00) all the x must match your browser version, 0s don't matter
-    //private static final String CHROME_DRIVER_PATH = "C:\\Users\\jxsti\\Downloads\\App Installs\\chromedriver-win64\\chromedriver.exe";
-    //private static final String BROWSER_PATH = "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe";
-
     private static final String STARTING_PAGE_URL = "https://www.cuny.edu/about/administration/offices/cis/cunyfirst/";
     private static final String SITE_DATE_FORMAT = "MMMM d, yyyy\nh:mma";
     private static final ZoneId ENROLLMENT_TIMEZONE = ZoneId.of("America/New_York");
@@ -49,10 +43,10 @@ public class Sniper {
     public void setUp() throws IOException {
         userData = ConfigurationLoader.loadData();
 
-        System.setProperty("webdriver.chrome.driver", userData.getDriverPath()); //CHROME_DRIVER_PATH
+        System.setProperty("webdriver.chrome.driver", userData.getDriverPath());
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary(userData.getBrowserPath()); //BROWSER_PATH
+        options.setBinary(userData.getBrowserPath());
         options.addArguments("--start-maximized");
         options.addArguments("--disable-extensions");
         options.addArguments("--disable-gpu ");
