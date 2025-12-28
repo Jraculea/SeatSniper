@@ -1,6 +1,6 @@
 # <p align="center">Seat Sniper</p>
 
-*A course enrollment automation tool for CUNY students. Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.*
+<p align="center">*A course enrollment automation tool for CUNY students. Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.*</p>
 
 
 
@@ -13,9 +13,9 @@
 - [Usage](#usage)
 - [Planned Features](#planned-features)
 - [Important Notes](#important-notes)
-- [License](#license)
 - [Contributing](#contributing)
 - [Support](#support)
+- [License](#license)
 
 
 
