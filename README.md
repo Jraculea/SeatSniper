@@ -1,6 +1,6 @@
 # <p align="center">Seat Sniper</p>
 
-*<p align="center">A course enrollment automation tool for CUNY students.<br>Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.</br></p>*
+*<p align="center">A course enrollment automation tool for CUNY students.<br>Aims to provide better chances at securing seats in desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available.<br>Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.</br></br></p>*
 
 ## Table of Contents
 
@@ -63,7 +63,7 @@ Alternatively, you can download the project as a ZIP file and extract it to your
 
 2. **Download the matching ChromeDriver**:
    - Visit the [ChromeDriver Downloads page](https://googlechromelabs.github.io/chrome-for-testing/#stable)
-   - Select the version that matches your browser (`xxx.xx.xxxx.00` all the `x`s must match your browser version, but the `0`s don't need to)
+   - Select the version that matches your browser (`xxx.xx.xxxx.00` all the `x` must match your browser version, but the `0` don't need to)
    - Download the appropriate file for your operating system (Windows, macOS, or Linux)
 
    ![ChromeDriver Download](images/chrome_driver_download.png)
@@ -191,6 +191,7 @@ java -cp target/classes com.seatsniper.Main
    - Runs for the specified `maxDuration` (or indefinitely if set to 0), or once all courses have been enrolled in
 7. **Feedback**: 
    - Outputs the status of each course every attempt (i.e., enrolled, wait-listed, failed (full), unavailable (unknown course code))
+   
    ![Attempt Output Example](images/attempt_output_example.png)
 
 ### Stopping the Application
@@ -224,7 +225,7 @@ If you encounter any issues or have questions, please open an issue on the [GitH
 
 ## License
 
-See the [LICENSE](LICENSE) file for details.
+See the [license](LICENSE) file for details.
 
 ---
 
