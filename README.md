@@ -1,6 +1,8 @@
-# Seat Sniper 🎯
+# <p align="center">Seat Sniper</p>
 
-A course enrollment automation tool for CUNY students. Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.
+*A course enrollment automation tool for CUNY students. Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.*
+
+
 
 ## Table of Contents
 
@@ -15,6 +17,8 @@ A course enrollment automation tool for CUNY students. Provides better chances a
 - [Contributing](#contributing)
 - [Support](#support)
 
+
+
 ## Features
 
 - **Automated Course Enrollment**: Periodically checks for available seats and automatically enrolls when spots open up
@@ -23,13 +27,15 @@ A course enrollment automation tool for CUNY students. Provides better chances a
 - **Time-Limited Execution**: Set a maximum duration for the automation to run, or let it run indefinitely
 - **MFA Support**: Integrated support for CUNY's multi-factor authentication system
 
+
+
 ## Prerequisites
 
 Before you begin, ensure you have a list of desired course section codes.
 
 - The tool uses the **number** portion of a **section code** ![Browser Version Check](images/chromium_version.png)
 - To find desired course section codes, navigate Schedule Builder and note them for later.
-  - ([Check here](https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/registrar/resources/schedulebuilder/SB-Advisor-Guide_01.22.2021.pdf#page=21)) for more information on how to obtain a course section code.
+  - [Check here](#how-to-find-section-codes) for more information on how to obtain a course section code.
 
 Before you begin, ensure you have the following installed:
 
@@ -38,6 +44,8 @@ Before you begin, ensure you have the following installed:
 - **Maven** ([Download Maven](https://maven.apache.org/download.cgi))
 - **Chrome Browser** (or Chromium-based browser like Brave)
 - **ChromeDriver** (matching your browser version)
+
+
 
 ## Installation
 
@@ -71,13 +79,14 @@ Alternatively, you can download the project as a ZIP file and extract it to your
 3. **Extract ChromeDriver**:
    - Extract the downloaded file to a location you can easily access
    - Note the full path to the `chromedriver.exe` file (Windows) or `chromedriver` executable (macOS/Linux)
-   - Example Windows path: `C:\Users\YourName\Downloads\chromedriver-win64\chromedriver.exe`
+   - Example Windows path: `C:\Users\User\Downloads\chromedriver-win64\chromedriver.exe`
 
    ![ChromeDriver Location](images/chrome_driver_path.png)
 
    > **Helpful Links:**
    > - [ChromeDriver Official Downloads](https://googlechromelabs.github.io/chrome-for-testing/#stable)
    > - [ChromeDriver Documentation](https://chromedriver.chromium.org/)
+
 
 ### Step 3: Build the Project
 
@@ -88,6 +97,8 @@ mvn clean install
 ```
 
 This will download all required dependencies and compile the project.
+
+
 
 ## Configuration
 
@@ -157,7 +168,9 @@ This will download all required dependencies and compile the project.
    > **Helpful Links:**
    > - [How to Find Your Browser Path](https://support.google.com/chrome/answer/95346)
    > - [CUNY MFA Setup Guide](https://employees.brooklyn.edu/base/cuny-mfa-setup/)
-   > - [How to find section codes](https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/registrar/resources/schedulebuilder/SB-Advisor-Guide_01.22.2021.pdf#page=21)
+   > - [How to find section codes](https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/registrar/resources/schedulebuilder/SB-Advisor-Guide_01.22.2021.pdf#page=21) <a name="how-to-find-section-codes"></a>
+
+
 
 ## Usage
 
@@ -198,12 +211,16 @@ To stop the application:
 - Enter `Ctrl + C` in the terminal/command prompt
 - The application will gracefully shut down and close the browser
 
+
+
 ## Planned Features
 
 - Enrollment in courses from multiple CUNY colleges
 - Moving from terminal output to webhooks for the status of courses
 - Fetching recommended courses based on DegreeWorks and professor reviews (i.e., faculty evaluations and RateMyProfessor)
 - Scaling to SAAS(?)
+
+
 
 ## Important Notes
 
@@ -212,14 +229,20 @@ To stop the application:
 - **Browser Updates**: If you update your browser, you may need to download a new ChromeDriver version
 - **Account Safety**: Use this tool responsibly and in accordance with CUNY's terms of service
 
+
+
 ## License
 
 See the [LICENSE](LICENSE) file for details.
+
+
 
 ## Contributing
 
 - Support the project by giving it a star 🌟 Thanks!
 - Contributions are welcome! Please feel free to submit a Pull Request.
+
+
 
 ## Support
 
