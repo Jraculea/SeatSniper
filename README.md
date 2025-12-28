@@ -1,8 +1,6 @@
 # <p align="center">Seat Sniper</p>
 
-<p align="center">*A course enrollment automation tool for CUNY students. Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.*</p>
-
-
+*<p align="center">A course enrollment automation tool for CUNY students.<br>Provides better chances at securing seats in their desired courses for the current or upcoming semester. The tool periodically checks for seat openings and automatically enrolls if any are available. Ultimately saving time, reducing stress during finals, and helping students avoid poorly rated professors or a delayed graduation.</br></p>*
 
 ## Table of Contents
 
@@ -17,8 +15,6 @@
 - [Support](#support)
 - [License](#license)
 
-
-
 ## Features
 
 - **Automated Course Enrollment**: Periodically checks for available seats and automatically enrolls when spots open up
@@ -26,8 +22,6 @@
 - **Configurable Intervals**: Customize the cooldown period between enrollment attempts
 - **Time-Limited Execution**: Set a maximum duration for the automation to run, or let it run indefinitely
 - **MFA Support**: Integrated support for CUNY's multi-factor authentication system
-
-
 
 ## Prerequisites
 
@@ -44,8 +38,6 @@ Before you begin, ensure you have the following installed:
 - **Maven** ([Download Maven](https://maven.apache.org/download.cgi))
 - **Chrome Browser** (or Chromium-based browser like Brave)
 - **ChromeDriver** (matching your browser version)
-
-
 
 ## Installation
 
@@ -97,8 +89,6 @@ mvn clean install
 ```
 
 This will download all required dependencies and compile the project.
-
-
 
 ## Configuration
 
@@ -170,8 +160,6 @@ This will download all required dependencies and compile the project.
    > - [CUNY MFA Setup Guide](https://employees.brooklyn.edu/base/cuny-mfa-setup/)
    > - [How to find section codes](https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/registrar/resources/schedulebuilder/SB-Advisor-Guide_01.22.2021.pdf#page=21) <a name="how-to-find-section-codes"></a>
 
-
-
 ## Usage
 
 ### Step 5: Run the Application
@@ -211,16 +199,12 @@ To stop the application:
 - Enter `Ctrl + C` in the terminal/command prompt
 - The application will gracefully shut down and close the browser
 
-
-
 ## Planned Features
 
 - Enrollment in courses from multiple CUNY colleges
 - Moving from terminal output to webhooks for the status of courses
 - Fetching recommended courses based on DegreeWorks and professor reviews (i.e., faculty evaluations and RateMyProfessor)
 - Scaling to SAAS(?)
-
-
 
 ## Important Notes
 
@@ -229,25 +213,20 @@ To stop the application:
 - **Browser Updates**: If you update your browser, you may need to download a new ChromeDriver version
 - **Account Safety**: Use this tool responsibly and in accordance with CUNY's terms of service
 
-
-
-## License
-
-See the [LICENSE](LICENSE) file for details.
-
-
-
 ## Contributing
 
 - Support the project by giving it a star 🌟 Thanks!
 - Contributions are welcome! Please feel free to submit a Pull Request.
 
-
-
 ## Support
 
 If you encounter any issues or have questions, please open an issue on the [GitHub repository](https://github.com/Jraculea/SeatSniper/issues).
 
+## License
+
+See the [LICENSE](LICENSE) file for details.
+
 ---
 
-⚠️ **Disclaimer**: This tool is for educational purposes. Use responsibly and in accordance with CUNY's terms of service. The developer(s) is not responsible for any misuse of this software.
+**<p align="center">⚠️ DISCLAIMER ⚠️</p>**
+*<p align="center">This tool is for educational purposes. Use responsibly and in accordance with CUNY's terms of service. The developer(s) is not responsible for any misuse of this software.</p>*
